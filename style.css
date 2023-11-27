@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*home*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: #DCCC98;
+    color: #ededed;
+}
+.header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 10%;
+background: #BEB076;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+}
+.logo {
+    font-size:  25px;
+    color: snow;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: snow;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+ }
+.navbar a:hover {
+color: darkred;
+
+} 
+.home{
+    position: relative;
+    height: 100vh;
+     display: flex;
+     align-items: center;
+     padding: 0 10%;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     gap: 4rem;
+}
+.home-content{
+    max-width: 700px;
+}
+.home-content h1 {
+     font-size: 45px;
+     font-weight: 700;
+     line-height: 1.2;
+     color:#663306;
+} 
+.home-content h3 {
+     font-size: 32px;
+     font-weight: 700;
+     color: darkred;
+}
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #663306;
+}
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #D4C255;
+    border: 2px solid #A1943A;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #E9E9E9;
+}
+.btn-box a:hover { 
+   color: #E9E9E9;
+}
+.btn-box a:nth-child(2):hover {
+    color:#081b29; 
+}
+.btn-box a:nth-child(2)::before {
+    background: #D4C255;
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #DCCC98;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before {
+   width: 100%;
+
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-sci a {
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid #A1943A;
+   border-radius: 50%;
+   font-size: 20px;
+   color: #663306;
+   text-decoration: none;
+   z-index: 1;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.home-sci a:hover {
+   color: #081b29;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BEB076;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before {
+    width: 100%;
+}
+.home-content h3 {
+    font-size: 35px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+  .home-content h3:after {
+
+      content: attr(data-text);
+      position: absolute;
+      left: 2px;
+      text-shadow: -2px 0 #D4C255;
+      top: 0;
+      color: black;
+      background: black solid;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: glitch1 8s infinite linear alternate-reverse;
+  
+  }
+  .home-content h3:before {
+  
+      content: attr(data-text);
+      position: absolute;
+      left: -2px;
+      text-shadow: 1px 0 #D4C255;
+      top: 0;
+      color: black;
+      background: #D4C255 solid;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: glitch2 3s infinite linear alternate-reverse;
+  
+  }
+  /* fim do home*/
+
+  /*sobre mim*/
+  span {
+    color: darkred;
+  }
+  .Sobremim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about-img img {
+    width: 40vw;
+    padding: 3rem;
+  }
+  .heading {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .sobremim-content h2{ 
+    text-align: left;
+    line-height: 1.2;
+    color: #663306;
+  }
+
+  .sobremim-content h3{
+    color: #663306;
+    font-size: 2rem;
+  }
+  .sobremim-content p { 
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    color: #663306;
+  }
+  .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #D4C255;
+    border: 2px solid #A1943A;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  /*fim do sobre mim*/
+
+  /*habilidades*/
+  .Right {
+    font-size: 4.0rem;
+    text-align: center;
+    color: #663306;
+    
+  }
+ .Habilidades-container .Habilidades-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  margin-top: 30px;
+  color: #663306;
+ }
+ .Habilidades-card{ 
+  border: 2px solid #D4C255;
+  padding: 60px 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 16px;
+  transition: var(--transition);
+ }
+ .Habilidades-card:hover {
+  background:#D4C255;
+ }
+ .Habilidades-card i { 
+  font-size: 3rem;
+ }
+  /*fim das habilidades*/
+  
+  /*Efeito glitch no nome técnico em informática*/
+  @keyframes glitch1 {
+
+    0% {
+  
+      clip: rect(59px, 9999px, 84px, 0);
+  
+    }
+  
+    5% {
+  
+      clip: rect(46px, 9999px, 36px, 0);
+  
+    }
+  
+    10% {
+  
+      clip: rect(72px, 9999px, 84px, 0);
+  
+    }
+  
+    15% {
+  
+      clip: rect(58px, 9999px, 43px, 0);
+  
+    }
+  
+    20% {
+  
+      clip: rect(34px, 9999px, 62px, 0);
+  
+    }
+  
+    25% {
+  
+      clip: rect(63px, 9999px, 84px, 0);
+  
+    }
+  
+    30% {
+  
+      clip: rect(59px, 9999px, 73px, 0);
+  
+    }
+  
+    35% {
+  
+      clip: rect(15px, 9999px, 44px, 0);
+  
+    }
+  
+    40% {
+  
+      clip: rect(7px, 9999px, 81px, 0);
+  
+    }
+  
+    45% {
+  
+      clip: rect(63px, 9999px, 35px, 0);
+  
+    }
+  
+    50% {
+  
+      clip: rect(61px, 9999px, 98px, 0);
+  
+    }
+  
+    55% {
+  
+      clip: rect(8px, 9999px, 41px, 0);
+  
+    }
+  
+    60% {
+  
+      clip: rect(29px, 9999px, 32px, 0);
+  
+    }
+  
+    65% {
+  
+      clip: rect(7px, 9999px, 55px, 0);
+  
+    }
+  
+    70% {
+  
+      clip: rect(36px, 9999px, 60px, 0);
+  
+    }
+  
+    75% {
+  
+      clip: rect(75px, 9999px, 83px, 0);
+  
+    }
+  
+    80% {
+  
+      clip: rect(100px, 9999px, 16px, 0);
+  
+    }
+  
+    85% {
+  
+      clip: rect(47px, 9999px, 22px, 0);
+  
+    }
+  
+    90% {
+  
+      clip: rect(8px, 9999px, 45px, 0);
+  
+    }
+  
+    95% {
+  
+      clip: rect(0, 900px, 0, 0);
+  
+    }
+  
+    100% {
+  
+      clip: rect(0, 900px, 0, 0);
+  
+    }
+  
+  }
+  
+   
+  
+  @keyframes glitch2 {
+  
+    0% {
+  
+      clip: rect(7px, 9999px, 60px, 0);
+  
+    }
+  
+    5% {
+  
+      clip: rect(3px, 9999px, 30px, 0);
+  
+    }
+  
+    10% {
+  
+      clip: rect(75px, 9999px, 95px, 0);
+  
+    }
+  
+    15% {
+  
+      clip: rect(30px, 9999px, 70px, 0);
+  
+    }
+  
+    20% {
+  
+      clip: rect(58px, 9999px, 27px, 0);
+  
+    }
+  
+    25% {
+  
+      clip: rect(67px, 9999px, 80px, 0);
+  
+    }
+  
+    30% {
+  
+      clip: rect(36px, 9999px, 12px, 0);
+  
+    }
+  
+    35% {
+  
+      clip: rect(98px, 9999px, 81px, 0);
+  
+    }
+  
+    40% {
+  
+      clip: rect(99px, 9999px, 91px, 0);
+  
+    }
+  
+    45% {
+  
+      clip: rect(88px, 9999px, 24px, 0);
+  
+    }
+  
+    50% {
+  
+      clip: rect(62px, 9999px, 57px, 0);
+  
+    }
+  
+    55% {
+  
+      clip: rect(17px, 9999px, 82px, 0);
+  
+    }
+  
+    60% {
+  
+      clip: rect(17px, 9999px, 29px, 0);
+  
+    }
+  
+    65% {
+  
+      clip: rect(80px, 9999px, 62px, 0);
+  
+    }
+  
+    70% {
+  
+      clip: rect(35px, 9999px, 40px, 0);
+  
+    }
+  
+    75% {
+  
+      clip: rect(43px, 9999px, 85px, 0);
+  
+    }
+  
+    80% {
+  
+      clip: rect(55px, 9999px, 95px, 0);
+  
+    }
+  
+    85% {
+  
+      clip: rect(67px, 9999px, 58px, 0);
+  
+    }
+  
+    90% {
+  
+      clip: rect(8px, 9999px, 45px, 0);
+  
+    }
+  
+    95% {
+  
+      clip: rect(0, 900px, 0, 0);
+  
+    }
+  
+    100% {
+  
+      clip: rect(0, 900px, 0, 0);
+  
+    }
+  }
+  /*fim do Efeito glitch no nome técnico em informática*/
